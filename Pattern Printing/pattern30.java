@@ -1,0 +1,18 @@
+public class pattern30{
+  public static void main(String args[]){
+    int i;
+    int j;
+    int n1=0;
+    int n2=1;
+    int r=n1+n2;
+    for(i=1; i<=5; i++){
+      for(j=1; j<=i; j++){
+        System.out.printf("%d ",r);
+        r=n1+n2;
+        n1=n2; 
+        n2=r;
+      }
+      System.out.print("\n");
+    }
+  }
+}
